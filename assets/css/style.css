@@ -73,8 +73,9 @@
    * typography
    */
 
-  --ff-heading: 'Sora', sans-serif;
-  --ff-content: 'Poppins', sans-serif;
+  --ff-saira-stencil-one: "Saira Stencil One", sans-serif; 
+  --ff-poppins: 'Poppins', sans-serif;
+  --ff-roboto: 'Roboto', sans-serif;
 
   --fs-1: 2rem;
   --fs-2: calc(1.813rem + 1vw);
@@ -199,7 +200,7 @@ ion-icon { pointer-events: none; }
 }
 
 html {
-  font-family: var(--ff-content);
+  font-family: var(--ff-roboto);
   scroll-behavior: smooth;
 }
 
@@ -220,20 +221,17 @@ body.active { overflow: hidden; }
 
 .container { padding-inline: 10px; }
 
-
 .h1 {
   font-size: var(--fs-1);
   line-height: 1.2;
   font-weight: 400;
-  font-family: var(--ff-heading);
 }
-
 
 .h2,
 .h3,
 .h4 {
   color: var(--color-primary);
-  font-family: var(--ff-heading);
+  font-family: var(--ff-poppins);
   line-height: 1.2;
 }
 
@@ -356,10 +354,9 @@ body.active { overflow: hidden; }
   z-index: 2;
 }
 
-
 .logo a {
   color: var(--color-primary);
-  font-family: var(--ff-heading);
+  font-family: var(--ff-saira-stencil-one);
 }
 
 .logo span {
@@ -659,10 +656,9 @@ main { overflow-x: hidden; }
   width: 154px;
 }
 
-
 .toggle-btn {
   color: var(--color-primary);
-  font-family: var(--ff-content);
+  font-family: var(--ff-poppins);
   padding: 5px 25px;
   transition: var(--transition-1);
 }
@@ -855,11 +851,10 @@ main { overflow-x: hidden; }
 
 .form-wrapper { margin-bottom: 25px; }
 
-
 .form-label {
   color: var(--color-primary);
   font-size: var(--fs-7);
-  font-family: var(--ff-content);
+  font-family: var(--ff-poppins);
   margin-bottom: 8px;
   margin-left: 5px;
 }
