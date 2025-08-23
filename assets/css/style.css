@@ -159,6 +159,50 @@ body.light_theme {
 
 li { list-style: none; }
 
+
+/* Custom 3D Gallery Styles */
+.project-category {
+  margin-bottom: 40px;
+  padding: 20px 0 0 0;
+}
+.project-subtitle {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--raw-seinna);
+  font-family: var(--ff-poppins);
+  font-weight: 700;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.project-images-3d {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.project-img-3d {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  background: var(--bg-secondary);
+  transition: transform 0.5s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+  will-change: transform;
+  cursor: pointer;
+  perspective: 600px;
+}
+.project-img-3d:hover {
+  transform: scale(1.08) rotateY(18deg) rotateX(6deg) translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.28);
+  z-index: 2;
+}
+.project-img-3d:active {
+  transform: scale(0.98) rotateY(-8deg) rotateX(-2deg);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+}
 a { text-decoration: none; }
 
 a,
